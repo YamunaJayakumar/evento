@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+.logo,.nav-link{
+    color: gray!important;
+
+}
+/* home */
+#home{
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    background-image: url('./image/01-elior-S1cS7DEzH.jpg');
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+.home-heading{
+    font-size: 425%;
+    font-weight: 800;
+    color:white;
+    text-shadow: 5px 4px 5px rgb(6, 6, 6,.2);
+    
+}
+.catrgory-card,.venu-img{
+   height:15rem;
+}
+.g-img{
+    /* height:20rem; */
+}
+.section-h4{
+
+}
+.section-span{
+
+}
+.gallery-content{
+    background-color: rgb(152, 152, 87);
+    padding:2rem 0px;
+}
+#review{
+    background-color: gainsboro;
+    padding: 5rem;
+}
+.footer{
+    
+}
+/* moblie */
+@media (max-width:767px){
+   
+}

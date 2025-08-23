@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evento</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#">Evento</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#venu">Venue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#review">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#port">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#aboutus">About Us</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <!-- home -->
+    <section id="home">
+        <h1 class="home-heading">Your wedding,Your Way</h1>
+        <!-- modal -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn booknow btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Now
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Enter Your Details</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Adress</label>
+                                <input class="form-control" id="address"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="number" class="form-label">Contact Number</label>
+                                <input type="tel" class="form-control" id="number"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="number" class="form-label">Budget</label>
+                                <input type="number" class="form-control" id="number"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- category -->
+    <section class="category container py-5">
+        <div class="cateogry-header d-flex justify-content-between">
+            <h4 class="section-h4">
+                BROWSE BY CATEGORY
+            </h4>
+            <span id="section-span"><a href="">view all</a></span>
+        </div>
+        <div class="category-content py-3">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 ">
+                        <div class="card" style="width:auto;">
+                            <img src="./image/destination.webp" class="card-img-top w-100 catrgory-card " alt="...">
+                            <div class="card-body">
+                                <h6 class="card-text text-center card-h4">DESTINATION WEDDING</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card" style="width:auto;">
+                            <img src="./image/Wedding-Videography.jpg" class="card-img-top w-100 catrgory-card"
+                                alt="...">
+                            <div class="card-body">
+                                <h6 class="card-text text-center card-h4">VIDEOGRAPHY</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card" style="width:auto;">
+                            <img src="./image/catering.webp" class="card-img-top w-100  catrgory-card" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-text text-center card-h4">CATERING</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card category-cards" style="width:auto;">
+                            <img src="./image/weddingplanner.jpg" class="card-img-top w-100 catrgory-card" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-text text-center card-h4">WEDDING PLANNER</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- venu -->
+    <section id="venu" class="py-5 container">
+        <div class="venu-header d-flex justify-content-between">
+            <h4 class="section-h4">
+                POPULAR VENEU
+            </h4>
+            <span id="section-span"><a href="">view all</a></span>
+        </div>
+        <div class="venu-content">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./image/venue1.webp" class="card-img-top w-100 venu-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Thanima Farm Life Pvt Ltd</h5>
+                                <p class="card-text">Nallepilly, Gowdankalam, Palakkad</p>
+                                <a href="#" class="btn btn-secondary">Request Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./image/v2.webp" class="card-img-top w-100 venu-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Imperial Insignia </h5>
+                                <p class="card-text">Padma Junction, Kacheripady, Kochi</p>
+                                <a href="#" class="btn btn-secondary">Request Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./image/v3.webp" class="card-img-top w-100 venu-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fatima Matha Parish Hall</h5>
+                                <p class="card-text">Kadavanthra, Kochi</p>
+                                <a href="#" class="btn btn-secondary">Request Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./image/v4.webp" class="card-img-top w-100 venu-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Reccaa Club</h5>
+                                <p class="card-text">Thrikkakara, Kochi</p>
+                                <a href="#" class="btn btn-secondary">Request Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./image/v5.webp" class="card-img-top w-100 venu-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">KMS Legacy Resort</h5>
+                                <p class="card-text">
+                                    Malampuzha, Palakkad</p>
+                                <a href="#" class="btn btn-secondary">Request Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./image/v10.webp" class="card-img-top w-100 venu-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ramada by Wyndham</h5>
+                                <p class="card-text">Kumbalam, Ernakulam</p>
+                                <a href="#" class="btn btn-secondary">Request Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./image/v7.webp" class="card-img-top w-100 venu-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Abaam Tharavaadu</h5>
+                                <p class="card-text">Kumbidy, Poovathussery, Thrissur</p>
+                                <a href="#" class="btn btn-secondary">Request Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./image/v8.webp" class="card-img-top w-100 venu-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Olam on the lake</h5>
+                                <p class="card-text">
+                                    Panangad, Kochi</p>
+                                <a href="#" class="btn btn-secondary">Request Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- aboutus -->
+    <section id="aboutus" class=" border-primary continer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <img src="./image/about.webp" class="w-100 about-img" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="venu-header d-flex flex-column justify-content-between align-item-center text-start">
+
+                        <h4 class="section-h4 text-center">
+                            About Us
+                        </h4>
+                        <span id="section-span text-start">We are an ISO 9001:2015-certified event management company
+                            based in Kerala, with over 15 years of experience in the event management industry in
+                            Kerala. Melodia Event Management specializes in wedding event management, as well as a wide
+                            range of corporate, personal, regional, public, and private event management
+                            services—creating lasting memories for thousands of clients in the Malayalee community in
+                            Kerala and for those seeking destination weddings in Kerala from other states of India and
+                            abroad. Since 2010–2011, we have successfully organized over 750 weddings, 90 corporate
+                            events, 30 inaugurations, and 150 other private events. In 2025, we are committed to
+                            delivering 150 more exceptional events as we continue to grow and serve our clients with
+                            excellence.Additionally, the brand name Melodia Event Management is often referred to
+                            interchangeably as Melodia Events by the company and people in Kerala. Melodia Events, or
+                            simply Melodia, is primarily used as an informal or short name for the company; however, our
+                            official name remains Melodia Event Management. We mainly serve in God’s Own Country as a
+                            specialized event management company for Kerala’s event management services.</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="port " class="container py-5">
+        <div class="gallery-header d-flex justify-content-between">
+            <h4 class="section-h4">
+                Gallery
+            </h4>
+            <span id="section-span"><a href="">view all</a></span>
+        </div>
+        <div class="gallery-content container my-4 mx-auto">
+            <div class="d-flex flex-wrap">
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/g2.jpg" class="card-img-top " alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/g10.jpg" class=" g-img" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/g3.avif" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/g4.webp" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/g5.jpg" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/g6.jpg" class="card-img-top " alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/g7.jpeg" class="card-img-top " alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/g8.jpg" class="card-img-top " alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review -->
+    <section id="review" class="reviews container my-5">
+        <div class="gallery-header d-flex justify-content-between">
+            <h4 class="section-h4 py-5">
+                Reviews
+            </h4>
+        </div>
+        <div class="review-content">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Saleena Devassy
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text ">
+                                    “One Of the Best Decorators I have met till now. During the first meet, we had no
+                                    idea what to select or what kind of decorations suits the venue and all, but as a
+                                    decorator, Nitish had a lot of knowledge on these categories. He was able to help
+                                    with the decoration wrt to our budget constraints. Few Qualities of Nitish as
+                                    PetalsEvents are 1. Humble and Honest.  Thanks again.”
+                                </p>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Rahul,kochi
+                            </div>
+                            <div class="card-body">
+                                
+                                <p class="card-text">
+                                    “So with one week in hand, we called up Nitesh and trusted him to do our wedding
+                                    decor, over everybody else that I was suggested. It was the best decision ever. We
+                                    met Nitesh only once, before the D-Day and told him what we had on mind. He spoke so
+                                    less but let his work do all the talking. He required no follow-ups and did not
+                                    stress us out for any coordination with the venue. Nitesh and team are exceptionally
+                                    talented. 
+                                     ” </p>
+
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card text-center">
+                            <div class="card-header">
+                               diya,kollam
+                            </div>
+                            <div class="card-body">
+                               
+                                <p class="card-text">
+                                    We were introduced to Nithesh by our previous wedding planner friends just a month
+                                    before our wedding as our earlier wedding dates were postponed.
+
+                                    Nithesh and his team did a fab job for our wedding at Fireflies Intercultural Centre
+                                    just like we wanted - minimalist, eco-friendly and yet aesthetic.
+
+                                    Thank you for making our wedding so memorable! </p>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer  py-lg-5">
+        <div class="footer-content container">
+            <div class="row">
+                <div class="col-12 py-5  col-md-3 col-lg-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h6>Quick Links</h6>
+                        </li>
+                        <li class="list-group-item">Home</li>
+                        <li class="list-group-item">About Us</li>
+                        <li class="list-group-item">Services</li>
+                        <li class="list-group-item">Testimonials</li>
+                    </ul>
+                </div>
+                <div class="col-12 py-5 col-md-3 col-lg-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h6>Customer Service</h6>
+                        </li>
+                        <li class="list-group-item">FAQs –</li>
+                        <li class="list-group-item">Support</li>
+                        <li class="list-group-item">Privacy Policy</li>
+                        <li class="list-group-item">Cancellation & Refund Policy</li>
+                    </ul>
+                </div>
+                <div class="col-12 py-5 col-md-3 col-lg-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h6>Follow Us</h6>
+                        </li>
+                        <li class="list-group-item">Facebook</li>
+                        <li class="list-group-item">Instagram</li>
+                        <li class="list-group-item">Pinterest</li>
+                        <li class="list-group-item">LinkedIn</li>
+                    </ul>
+                </div>
+                <div class="col-12 py-5 col-md-3 col-lg-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h6>Contact Information</h6>
+                        </li>
+                        <li class="list-group-item">Evento Weddings</li>
+                        <li class="list-group-item">2nd Floor, Harmony Plaza, MG Road,</li>
+                        <li class="list-group-item">Ernakulam, Kochi – 682016,
+                        </li>
+                        <li class="list-group-item">Kerala, India.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerp">
+            <p class="text-center py-5">&copy; 2018 Qode Interactive, All Rights Reserved</p>
+        </div>
+
+    </footer>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
