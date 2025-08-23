@@ -34,15 +34,6 @@
 .catrgory-card,.venu-img{
    height:15rem;
 }
-.g-img{
-    /* height:20rem; */
-}
-.section-h4{
-
-}
-.section-span{
-
-}
 .gallery-content{
     background-color: rgb(152, 152, 87);
     padding:2rem 0px;
@@ -51,9 +42,15 @@
     background-color: gainsboro;
     padding: 5rem;
 }
-.footer{
-    
+.g-img{
+    transition:transform 0.2s;
 }
+.g-img:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+
 /* moblie */
 @media (max-width:767px){
    
