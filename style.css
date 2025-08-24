@@ -2,22 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 /* navbar */
-.logo,.nav-link{
-    color: gray!important;
+.logo{
+    color: rgb(60, 59, 59)!important;
+    font-family:serif!important;
+    font-weight: 900!important;
+}
+.nav-link{
+    color: rgb(35, 34, 34)!important;
+    font-weight: 600!important;
 
+}
+.nav-link:hover{
+    color:rgb(90, 87, 87)!important;
 }
 /* home */
 #home{
     display: flex;
     flex-wrap: wrap;
-    
     flex-direction: column;
     justify-content:center;
     align-items: center;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
     background-image: url('./image/01-elior-S1cS7DEzH.jpg');
     background-repeat:no-repeat ;
     background-size: cover;
@@ -25,33 +34,66 @@
   
 }
 .home-heading{
-    font-size: 425%;
-    font-weight: 800;
+    font-size: 5rem;
+    font-weight: 900;
     color:white;
     text-shadow: 5px 4px 5px rgb(6, 6, 6,.2);
     
+}
+.aboutuss{
+   background-color: rgb(194, 194, 194)
+}
+.section-h4{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.viewall{
+    text-decoration: none;
+    color: rgb(48, 57, 131);
 }
 .catrgory-card,.venu-img{
    height:15rem;
 }
 .gallery-content{
-    background-color: rgb(152, 152, 87);
+    background-color: gainsboro;
     padding:2rem 0px;
 }
 #review{
-    background-color: gainsboro;
+    background-image:url('./image/nathan-dumlao-5BB_atDT4oA-unsplash.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     padding: 5rem;
 }
-.g-img{
-    transition:transform 0.2s;
+.img-card{
+   overflow: hidden;
 }
-.g-img:hover{
+.img-card img{
+   transition: transform 0.5s ease;
+   height: 100%; 
+     
+   
+}
+.img-card:hover img{
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.05); 
+   
 }
 
+.h6{
+    color: black!important;
+    font-size: 1.7rem !important;
+}
+.list-group-item:hover{
+    color:gainsboro
+}
 /* moblie */
 @media (max-width:767px){
+    .home-heading{
+        font-size: 3rem;
+        text-align: center;
+    }
    
 }
