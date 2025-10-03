@@ -5,4 +5,4 @@ A simple website built with **HTML** and **CSS frame work bootstrap**.
 - HTML  
 - CSS framework Bootstrap
  ##
-[Live Demo](https://yamunajayakumar.github.io/landingPage/)
+[Live Demo](https://evento-website.netlify.app/)
